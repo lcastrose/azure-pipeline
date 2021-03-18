@@ -1,4 +1,9 @@
-
+- task: prisma-cloud-compute-scan@3
+  inputs:
+    scanType: 'images'
+    twistlockService: 'lcastro-azure'
+    artifact: 'nginx:latest'
+    project: 'lcastro-azure'
 	# Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
